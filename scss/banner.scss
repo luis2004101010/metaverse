@@ -1,0 +1,133 @@
+.banner {
+  background-image: url(../assets/images/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  position: relative;
+
+  .sphere-1 {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    width: 50px;
+  }
+  .sphere-2 {
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    width: 40px;
+  }
+  .sphere-3 {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 30px;
+  }
+
+  .banner-title {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    h1 {
+      .title-1 {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .title-2 {
+        font-size: 48px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+      }
+      .title-3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .title-4 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(0deg, #fff000, #ff1c92, #4b018f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 8px;
+      }
+      img {
+        width: 50px;
+        vertical-align: baseline;
+      }
+    }
+  }
+  .image-card-wrapper {
+    position: relative;
+    padding-top: 100px;
+    .hero-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      height: 100%;
+    }
+    .inner-wrapper {
+      z-index: 2;
+      position: relative;
+    }
+    .image-card {
+      padding: 15px 10px;
+      border-radius: 5px;
+      background-image: linear-gradient(130deg, #4b018f, #e19a9a);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 20px;
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+      .image-wrapper {
+        background-color: #ff1c92;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        flex-shrink: 0;
+        i {
+          color: white;
+        }
+      }
+      .content {
+        p {
+          font-size: 12px;
+          color: white;
+          margin-bottom: 0;
+        }
+        h2 {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .banner {
+    .image-card-wrapper {
+      padding-top: 0;
+      .hero-image {
+        position: relative;
+        width: 300px;
+        margin-bottom: 20px;
+      }
+      .image-card.reverse {
+        flex-direction: row;
+      }
+    }
+  }
+}

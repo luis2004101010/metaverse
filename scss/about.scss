@@ -1,0 +1,58 @@
+.about {
+  background-image: url(../assets/images/about-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  .left-content {
+    position: relative;
+    text-align: right;
+    img {
+      width: 300px;
+    }
+    .content {
+      background-image: linear-gradient(130deg, #4b018f, #e19a9a);
+      border-radius: 10px;
+      padding: 10px;
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      width: 90%;
+      text-align: left;
+
+      p {
+        color: white;
+        margin-bottom: 0;
+      }
+      h2 {
+        color: white;
+      }
+      a {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .right-content {
+    .title {
+      .title-1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(0deg, #fff000, #ff1c92, #4b018f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 8px;
+      }
+      .title-2 {
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    p {
+      color: white;
+    }
+  }
+}

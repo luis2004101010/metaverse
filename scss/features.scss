@@ -1,0 +1,28 @@
+.features {
+  background-color: #363636;
+  .feature-image {
+    .feature-image-wrapper {
+      margin-top: 10px;
+
+      i {
+        color: aqua;
+        font-size: 35px;
+        transition: all 0.3s ease;
+      }
+    }
+    .content {
+      p {
+        color: white;
+        transition: all 0.3s ease;
+      }
+    }
+    &:hover {
+      i {
+        font-size: 40px;
+      }
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+}

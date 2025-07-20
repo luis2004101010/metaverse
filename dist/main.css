@@ -1,0 +1,268 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-brand {
+  margin-right: 40px;
+}
+.navbar-brand img {
+  width: 100px;
+}
+
+.nav-button-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.nav-two-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.nav-two-wrapper .nav-two i {
+  margin-right: 5px;
+}
+.nav-two-wrapper .nav-two i,
+.nav-two-wrapper .nav-two span {
+  color: white;
+  text-transform: uppercase;
+}
+.nav-two-wrapper .nav-two a {
+  color: #fa812f;
+  text-decoration: none;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 30px;
+  color: white;
+  min-width: 100px;
+  text-decoration: none;
+  text-align: center;
+}
+.button.orange-button {
+  background-image: radial-gradient(#c5bc12, #fa812f);
+}
+.button.blue-button {
+  background-image: radial-gradient(#58a0c8, #113f67);
+}
+.button:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-button-wrapper,
+  .nav-two-wrapper {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.banner {
+  background-image: url(../assets/images/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  position: relative;
+}
+.banner .sphere-1 {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  width: 50px;
+}
+.banner .sphere-2 {
+  position: absolute;
+  right: 20%;
+  top: 35%;
+  width: 40px;
+}
+.banner .sphere-3 {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 30px;
+}
+.banner .banner-title {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+.banner .banner-title h1 .title-1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner .banner-title h1 .title-2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.banner .banner-title h1 .title-3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner .banner-title h1 .title-4 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(0deg, #fff000, #ff1c92, #4b018f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 8px;
+}
+.banner .banner-title h1 img {
+  width: 50px;
+  vertical-align: baseline;
+}
+.banner .image-card-wrapper {
+  position: relative;
+  padding-top: 100px;
+}
+.banner .image-card-wrapper .hero-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  height: 100%;
+}
+.banner .image-card-wrapper .inner-wrapper {
+  z-index: 2;
+  position: relative;
+}
+.banner .image-card-wrapper .image-card {
+  padding: 15px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(130deg, #4b018f, #e19a9a);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.banner .image-card-wrapper .image-card.reverse {
+  flex-direction: row-reverse;
+}
+.banner .image-card-wrapper .image-card .image-wrapper {
+  background-color: #ff1c92;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+.banner .image-card-wrapper .image-card .image-wrapper i {
+  color: white;
+}
+.banner .image-card-wrapper .image-card .content p {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 0;
+}
+.banner .image-card-wrapper .image-card .content h2 {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .banner .image-card-wrapper {
+    padding-top: 0;
+  }
+  .banner .image-card-wrapper .hero-image {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .banner .image-card-wrapper .image-card.reverse {
+    flex-direction: row;
+  }
+}
+.features {
+  background-color: #363636;
+}
+.features .feature-image .feature-image-wrapper {
+  margin-top: 10px;
+}
+.features .feature-image .feature-image-wrapper i {
+  color: aqua;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+.features .feature-image .content p {
+  color: white;
+  transition: all 0.3s ease;
+}
+.features .feature-image:hover i {
+  font-size: 40px;
+}
+.features .feature-image:hover p {
+  font-weight: 700;
+}
+
+.about {
+  background-image: url(../assets/images/about-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.about .left-content {
+  position: relative;
+  text-align: right;
+}
+.about .left-content img {
+  width: 300px;
+}
+.about .left-content .content {
+  background-image: linear-gradient(130deg, #4b018f, #e19a9a);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 90%;
+  text-align: left;
+}
+.about .left-content .content p {
+  color: white;
+  margin-bottom: 0;
+}
+.about .left-content .content h2 {
+  color: white;
+}
+.about .left-content .content a {
+  color: white;
+  text-transform: uppercase;
+}
+.about .right-content .title .title-1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(0deg, #fff000, #ff1c92, #4b018f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 8px;
+}
+.about .right-content .title .title-2 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about .right-content p {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
