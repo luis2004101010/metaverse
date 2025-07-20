@@ -7,25 +7,25 @@ A simple test project using **HTML**, **SCSS**, and **JavaScript**.
 ## Folder Structure
 
 assets/
-images/
-about-bg.jpg
-banner-bg.jpg
-document.png
-hero.png
-logo.png
-sphere.png
-title.png
+└── images/
+├── about-bg.jpg
+├── banner-bg.jpg
+├── document.png
+├── hero.png
+├── logo.png
+├── sphere.png
+└── title.png
 
 dist/
-main.css
-main.css.map
+├── main.css
+└── main.css.map
 
 scss/
-about.scss
-banner.scss
-features.scss
-header.scss
-main.scss
+├── about.scss
+├── banner.scss
+├── features.scss
+├── header.scss
+└── main.scss
 
 index.html
 readme.md
